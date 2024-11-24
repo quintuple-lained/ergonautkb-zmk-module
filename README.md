@@ -1,6 +1,12 @@
 # Ergonaut One ZMK Module
 
-This repository contains the board files for the [Ergonaut One](https://github.com/ergonautkb/one/) to allow users to build firmware. 
+This repository contains the board files for the following [Ergonaut](https://ergonautkb.com) keyboards:
+
+- [Ergonaut One](https://github.com/ergonautkb/one/) 
+- [Ergonaut One S](https://github.com/ergonautkb/one-s/) 
+- [Dao](https://github.com/yumagulovrn/dao-choc-ble/) 
+
+To allow users to build firmware. 
 This can be done by adding the module to the west.yml found in your zmk-config's config directory. 
 There is a full guide available for this here: [ZMK Modules Doc](https://zmk.dev/docs/features/modules)
 
@@ -20,7 +26,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: one-zmk-module
+    - name: ergonautkb-zmk-module
       remote: ergonautkb
       revision: main
   self:
